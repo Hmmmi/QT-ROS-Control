@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/riki/JingMi_ROS_ws/catkin_ws/devel/setup.sh
