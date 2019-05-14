@@ -9,7 +9,7 @@ Getting stared with ROS. I use QT for GUI development. I implement the Raspberry
  - ...
 
 ## Running results
-![Raspberry Pi Robot](https://github.com/MiJingGitID12138/QT-ROS-Example/blob/master/pic/mapping.png)
+![Raspberry Pi Robot](https://github.com/MiJingGitID12138/QT-ROS-Example/blob/master/pic/raspberry%20pi%20robot.jpg)
 ![Mapping](https://github.com/MiJingGitID12138/QT-ROS-Example/blob/master/pic/mapping.png)
 ## Reference
  - [1] ROS机器人开发实践，胡春旭
