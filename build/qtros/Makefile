@@ -56,16 +56,6 @@ CMAKE_BINARY_DIR = /home/riki/JingMi_ROS_ws/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,39 +66,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -121,6 +78,17 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -132,6 +100,38 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,214 +166,199 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+qtros/CMakeFiles/qtros.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/qtros.dir/rule
+.PHONY : qtros/CMakeFiles/qtros.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+qtros: qtros/CMakeFiles/qtros.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : qtros
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+qtros/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/build
+.PHONY : qtros/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule
+qtros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule
+nav_msgs_generate_messages_nodejs: qtros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : roscpp_generate_messages_py
+.PHONY : nav_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_py.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
+nav_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+qtros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+nav_msgs_generate_messages_lisp: qtros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_eus
+.PHONY : nav_msgs_generate_messages_lisp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+qtros/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+nav_msgs_generate_messages_eus: qtros/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_nodejs
+.PHONY : nav_msgs_generate_messages_eus
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+nav_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+qtros/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+map_msgs_generate_messages_nodejs: qtros/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : roscpp_generate_messages_cpp
+.PHONY : map_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+map_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+.PHONY : map_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+qtros/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+map_msgs_generate_messages_eus: qtros/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_cpp
+.PHONY : map_msgs_generate_messages_eus
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+map_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+.PHONY : map_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+qtros/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+visualization_msgs_generate_messages_py: qtros/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
-.PHONY : std_msgs_generate_messages_cpp
+.PHONY : visualization_msgs_generate_messages_py
 
 # fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
+visualization_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+qtros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+visualization_msgs_generate_messages_nodejs: qtros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : roscpp_generate_messages_eus
+.PHONY : visualization_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_eus.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
+visualization_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+qtros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+visualization_msgs_generate_messages_lisp: qtros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_py
+.PHONY : visualization_msgs_generate_messages_lisp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+visualization_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+qtros/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+map_msgs_generate_messages_cpp: qtros/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : map_msgs_generate_messages_cpp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+map_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+.PHONY : map_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+qtros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+visualization_msgs_generate_messages_eus: qtros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
-.PHONY : roscpp_generate_messages_nodejs
+.PHONY : visualization_msgs_generate_messages_eus
 
 # fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
+visualization_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+qtros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+sensor_msgs_generate_messages_cpp: qtros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : std_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_cpp
 
 # fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+qtros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+geometry_msgs_generate_messages_nodejs: qtros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : roscpp_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 qtros/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
@@ -391,100 +376,898 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-qtros/CMakeFiles/qtros.dir/rule:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/qtros.dir/rule
-.PHONY : qtros/CMakeFiles/qtros.dir/rule
+qtros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-qtros: qtros/CMakeFiles/qtros.dir/rule
+geometry_msgs_generate_messages_lisp: qtros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : qtros
+.PHONY : geometry_msgs_generate_messages_lisp
 
 # fast build rule for target.
-qtros/fast:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/build
-.PHONY : qtros/fast
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
 
-include/qtros/moc_main_window.o: include/qtros/moc_main_window.cxx.o
+# Convenience name for target.
+qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: qtros/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: qtros/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf_generate_messages_eus.dir/build.make qtros/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: qtros/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_eus.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: qtros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: qtros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_cpp: qtros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: qtros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: qtros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: qtros/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf_generate_messages_cpp.dir/build.make qtros/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: qtros/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_generate_messages_eus.dir/build.make qtros/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_py: qtros/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: qtros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: qtros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: qtros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: qtros/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf_generate_messages_lisp.dir/build.make qtros/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_nodejs: qtros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: qtros/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/roscpp_generate_messages_py.dir/build.make qtros/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: qtros/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_lisp: qtros/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : map_msgs_generate_messages_lisp
+
+# fast build rule for target.
+map_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+.PHONY : map_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: qtros/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf_generate_messages_py.dir/build.make qtros/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: qtros/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: qtros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make qtros/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: qtros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: qtros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: qtros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: qtros/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_generate_messages_py.dir/build.make qtros/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: qtros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make qtros/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: qtros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: qtros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make qtros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_py: qtros/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/map_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+.PHONY : qtros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_eus: qtros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make qtros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+.PHONY : qtros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_nodejs: qtros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make qtros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : qtros/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: qtros/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make qtros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_cpp: qtros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_cpp: qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
+
+include/qtros/moc_main_window.o: include/qtros/moc_main_window.cpp.o
 
 .PHONY : include/qtros/moc_main_window.o
 
 # target to build an object file
-include/qtros/moc_main_window.cxx.o:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cxx.o
-.PHONY : include/qtros/moc_main_window.cxx.o
+include/qtros/moc_main_window.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o
+.PHONY : include/qtros/moc_main_window.cpp.o
 
-include/qtros/moc_main_window.i: include/qtros/moc_main_window.cxx.i
+include/qtros/moc_main_window.i: include/qtros/moc_main_window.cpp.i
 
 .PHONY : include/qtros/moc_main_window.i
 
 # target to preprocess a source file
-include/qtros/moc_main_window.cxx.i:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cxx.i
-.PHONY : include/qtros/moc_main_window.cxx.i
+include/qtros/moc_main_window.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.i
+.PHONY : include/qtros/moc_main_window.cpp.i
 
-include/qtros/moc_main_window.s: include/qtros/moc_main_window.cxx.s
+include/qtros/moc_main_window.s: include/qtros/moc_main_window.cpp.s
 
 .PHONY : include/qtros/moc_main_window.s
 
 # target to generate assembly for a file
-include/qtros/moc_main_window.cxx.s:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cxx.s
-.PHONY : include/qtros/moc_main_window.cxx.s
+include/qtros/moc_main_window.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.s
+.PHONY : include/qtros/moc_main_window.cpp.s
 
-include/qtros/moc_qnode.o: include/qtros/moc_qnode.cxx.o
+include/qtros/moc_manual_dialog.o: include/qtros/moc_manual_dialog.cpp.o
+
+.PHONY : include/qtros/moc_manual_dialog.o
+
+# target to build an object file
+include/qtros/moc_manual_dialog.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o
+.PHONY : include/qtros/moc_manual_dialog.cpp.o
+
+include/qtros/moc_manual_dialog.i: include/qtros/moc_manual_dialog.cpp.i
+
+.PHONY : include/qtros/moc_manual_dialog.i
+
+# target to preprocess a source file
+include/qtros/moc_manual_dialog.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.i
+.PHONY : include/qtros/moc_manual_dialog.cpp.i
+
+include/qtros/moc_manual_dialog.s: include/qtros/moc_manual_dialog.cpp.s
+
+.PHONY : include/qtros/moc_manual_dialog.s
+
+# target to generate assembly for a file
+include/qtros/moc_manual_dialog.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.s
+.PHONY : include/qtros/moc_manual_dialog.cpp.s
+
+include/qtros/moc_mapp.o: include/qtros/moc_mapp.cpp.o
+
+.PHONY : include/qtros/moc_mapp.o
+
+# target to build an object file
+include/qtros/moc_mapp.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o
+.PHONY : include/qtros/moc_mapp.cpp.o
+
+include/qtros/moc_mapp.i: include/qtros/moc_mapp.cpp.i
+
+.PHONY : include/qtros/moc_mapp.i
+
+# target to preprocess a source file
+include/qtros/moc_mapp.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.i
+.PHONY : include/qtros/moc_mapp.cpp.i
+
+include/qtros/moc_mapp.s: include/qtros/moc_mapp.cpp.s
+
+.PHONY : include/qtros/moc_mapp.s
+
+# target to generate assembly for a file
+include/qtros/moc_mapp.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.s
+.PHONY : include/qtros/moc_mapp.cpp.s
+
+include/qtros/moc_myviz.o: include/qtros/moc_myviz.cpp.o
+
+.PHONY : include/qtros/moc_myviz.o
+
+# target to build an object file
+include/qtros/moc_myviz.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o
+.PHONY : include/qtros/moc_myviz.cpp.o
+
+include/qtros/moc_myviz.i: include/qtros/moc_myviz.cpp.i
+
+.PHONY : include/qtros/moc_myviz.i
+
+# target to preprocess a source file
+include/qtros/moc_myviz.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.i
+.PHONY : include/qtros/moc_myviz.cpp.i
+
+include/qtros/moc_myviz.s: include/qtros/moc_myviz.cpp.s
+
+.PHONY : include/qtros/moc_myviz.s
+
+# target to generate assembly for a file
+include/qtros/moc_myviz.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.s
+.PHONY : include/qtros/moc_myviz.cpp.s
+
+include/qtros/moc_qnode.o: include/qtros/moc_qnode.cpp.o
 
 .PHONY : include/qtros/moc_qnode.o
 
 # target to build an object file
-include/qtros/moc_qnode.cxx.o:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cxx.o
-.PHONY : include/qtros/moc_qnode.cxx.o
+include/qtros/moc_qnode.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o
+.PHONY : include/qtros/moc_qnode.cpp.o
 
-include/qtros/moc_qnode.i: include/qtros/moc_qnode.cxx.i
+include/qtros/moc_qnode.i: include/qtros/moc_qnode.cpp.i
 
 .PHONY : include/qtros/moc_qnode.i
 
 # target to preprocess a source file
-include/qtros/moc_qnode.cxx.i:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cxx.i
-.PHONY : include/qtros/moc_qnode.cxx.i
+include/qtros/moc_qnode.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.i
+.PHONY : include/qtros/moc_qnode.cpp.i
 
-include/qtros/moc_qnode.s: include/qtros/moc_qnode.cxx.s
+include/qtros/moc_qnode.s: include/qtros/moc_qnode.cpp.s
 
 .PHONY : include/qtros/moc_qnode.s
 
 # target to generate assembly for a file
-include/qtros/moc_qnode.cxx.s:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cxx.s
-.PHONY : include/qtros/moc_qnode.cxx.s
+include/qtros/moc_qnode.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.s
+.PHONY : include/qtros/moc_qnode.cpp.s
 
-qrc_images.o: qrc_images.cxx.o
+include/qtros/moc_romap.o: include/qtros/moc_romap.cpp.o
+
+.PHONY : include/qtros/moc_romap.o
+
+# target to build an object file
+include/qtros/moc_romap.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o
+.PHONY : include/qtros/moc_romap.cpp.o
+
+include/qtros/moc_romap.i: include/qtros/moc_romap.cpp.i
+
+.PHONY : include/qtros/moc_romap.i
+
+# target to preprocess a source file
+include/qtros/moc_romap.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.i
+.PHONY : include/qtros/moc_romap.cpp.i
+
+include/qtros/moc_romap.s: include/qtros/moc_romap.cpp.s
+
+.PHONY : include/qtros/moc_romap.s
+
+# target to generate assembly for a file
+include/qtros/moc_romap.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.s
+.PHONY : include/qtros/moc_romap.cpp.s
+
+qrc_images.o: qrc_images.cpp.o
 
 .PHONY : qrc_images.o
 
 # target to build an object file
-qrc_images.cxx.o:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/qrc_images.cxx.o
-.PHONY : qrc_images.cxx.o
+qrc_images.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o
+.PHONY : qrc_images.cpp.o
 
-qrc_images.i: qrc_images.cxx.i
+qrc_images.i: qrc_images.cpp.i
 
 .PHONY : qrc_images.i
 
 # target to preprocess a source file
-qrc_images.cxx.i:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/qrc_images.cxx.i
-.PHONY : qrc_images.cxx.i
+qrc_images.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/qrc_images.cpp.i
+.PHONY : qrc_images.cpp.i
 
-qrc_images.s: qrc_images.cxx.s
+qrc_images.s: qrc_images.cpp.s
 
 .PHONY : qrc_images.s
 
 # target to generate assembly for a file
-qrc_images.cxx.s:
-	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/qrc_images.cxx.s
-.PHONY : qrc_images.cxx.s
+qrc_images.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/qrc_images.cpp.s
+.PHONY : qrc_images.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -540,6 +1323,87 @@ src/main_window.cpp.s:
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/main_window.cpp.s
 .PHONY : src/main_window.cpp.s
 
+src/manual_dialog.o: src/manual_dialog.cpp.o
+
+.PHONY : src/manual_dialog.o
+
+# target to build an object file
+src/manual_dialog.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.o
+.PHONY : src/manual_dialog.cpp.o
+
+src/manual_dialog.i: src/manual_dialog.cpp.i
+
+.PHONY : src/manual_dialog.i
+
+# target to preprocess a source file
+src/manual_dialog.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.i
+.PHONY : src/manual_dialog.cpp.i
+
+src/manual_dialog.s: src/manual_dialog.cpp.s
+
+.PHONY : src/manual_dialog.s
+
+# target to generate assembly for a file
+src/manual_dialog.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.s
+.PHONY : src/manual_dialog.cpp.s
+
+src/mapp.o: src/mapp.cpp.o
+
+.PHONY : src/mapp.o
+
+# target to build an object file
+src/mapp.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/mapp.cpp.o
+.PHONY : src/mapp.cpp.o
+
+src/mapp.i: src/mapp.cpp.i
+
+.PHONY : src/mapp.i
+
+# target to preprocess a source file
+src/mapp.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/mapp.cpp.i
+.PHONY : src/mapp.cpp.i
+
+src/mapp.s: src/mapp.cpp.s
+
+.PHONY : src/mapp.s
+
+# target to generate assembly for a file
+src/mapp.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/mapp.cpp.s
+.PHONY : src/mapp.cpp.s
+
+src/myviz.o: src/myviz.cpp.o
+
+.PHONY : src/myviz.o
+
+# target to build an object file
+src/myviz.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o
+.PHONY : src/myviz.cpp.o
+
+src/myviz.i: src/myviz.cpp.i
+
+.PHONY : src/myviz.i
+
+# target to preprocess a source file
+src/myviz.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/myviz.cpp.i
+.PHONY : src/myviz.cpp.i
+
+src/myviz.s: src/myviz.cpp.s
+
+.PHONY : src/myviz.s
+
+# target to generate assembly for a file
+src/myviz.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/myviz.cpp.s
+.PHONY : src/myviz.cpp.s
+
 src/qnode.o: src/qnode.cpp.o
 
 .PHONY : src/qnode.o
@@ -567,41 +1431,125 @@ src/qnode.cpp.s:
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/qnode.cpp.s
 .PHONY : src/qnode.cpp.s
 
+src/romap.o: src/romap.cpp.o
+
+.PHONY : src/romap.o
+
+# target to build an object file
+src/romap.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/romap.cpp.o
+.PHONY : src/romap.cpp.o
+
+src/romap.i: src/romap.cpp.i
+
+.PHONY : src/romap.i
+
+# target to preprocess a source file
+src/romap.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/romap.cpp.i
+.PHONY : src/romap.cpp.i
+
+src/romap.s: src/romap.cpp.s
+
+.PHONY : src/romap.s
+
+# target to generate assembly for a file
+src/romap.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/src/romap.cpp.s
+.PHONY : src/romap.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... list_install_components"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... edit_cache"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... test"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... qtros"
-	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... qtros"
+	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... install/strip"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... map_msgs_generate_messages_nodejs"
+	@echo "... map_msgs_generate_messages_eus"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... install"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rebuild_cache"
+	@echo "... tf_generate_messages_eus"
+	@echo "... list_install_components"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... test"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... nav_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... tf_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... include/qtros/moc_main_window.o"
 	@echo "... include/qtros/moc_main_window.i"
 	@echo "... include/qtros/moc_main_window.s"
+	@echo "... include/qtros/moc_manual_dialog.o"
+	@echo "... include/qtros/moc_manual_dialog.i"
+	@echo "... include/qtros/moc_manual_dialog.s"
+	@echo "... include/qtros/moc_mapp.o"
+	@echo "... include/qtros/moc_mapp.i"
+	@echo "... include/qtros/moc_mapp.s"
+	@echo "... include/qtros/moc_myviz.o"
+	@echo "... include/qtros/moc_myviz.i"
+	@echo "... include/qtros/moc_myviz.s"
 	@echo "... include/qtros/moc_qnode.o"
 	@echo "... include/qtros/moc_qnode.i"
 	@echo "... include/qtros/moc_qnode.s"
+	@echo "... include/qtros/moc_romap.o"
+	@echo "... include/qtros/moc_romap.i"
+	@echo "... include/qtros/moc_romap.s"
 	@echo "... qrc_images.o"
 	@echo "... qrc_images.i"
 	@echo "... qrc_images.s"
@@ -611,9 +1559,21 @@ help:
 	@echo "... src/main_window.o"
 	@echo "... src/main_window.i"
 	@echo "... src/main_window.s"
+	@echo "... src/manual_dialog.o"
+	@echo "... src/manual_dialog.i"
+	@echo "... src/manual_dialog.s"
+	@echo "... src/mapp.o"
+	@echo "... src/mapp.i"
+	@echo "... src/mapp.s"
+	@echo "... src/myviz.o"
+	@echo "... src/myviz.i"
+	@echo "... src/myviz.s"
 	@echo "... src/qnode.o"
 	@echo "... src/qnode.i"
 	@echo "... src/qnode.s"
+	@echo "... src/romap.o"
+	@echo "... src/romap.i"
+	@echo "... src/romap.s"
 .PHONY : help
 
 

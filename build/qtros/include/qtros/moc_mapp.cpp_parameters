@@ -1,0 +1,14 @@
+-I/opt/ros/kinetic/include
+-I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include/eigen3
+-I/usr/include/OGRE/Overlay
+-I/usr/include/OGRE
+-I/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros
+-I/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="qtros"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_mapp.cpp
+/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/mapp.h

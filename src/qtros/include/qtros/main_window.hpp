@@ -12,9 +12,11 @@
 ** Includes
 *****************************************************************************/
 
-#include <QtGui/QMainWindow>
+//#include <QtWidgets/QMainWindow>
+//#include <QtGui/QMainWindow>
 #include "ui_main_window.h"
 #include "qnode.hpp"
+#include "manual_dialog.h"
 
 /*****************************************************************************
 ** Namespace
@@ -49,13 +51,33 @@ public Q_SLOTS:
 	void on_button_connect_clicked(bool check );
 	void on_checkbox_use_environment_stateChanged(int state);
 
+  void on_up_clicked();
+  void on_down_clicked();
+  void on_left_clicked();
+  void on_right_clicked();
+
     /******************************************
     ** Manual connections
     *******************************************/
     void updateLoggingView(); // no idea why this can't connect automatically
+    //声明日志更新函数
+    void updateLoggingView_sub();
+    //声明发布消息函数
+    void pub_cmd();
+    //声明弹出框按钮点击后需要处理的函数
+    void on_dialog_button_clicked();
+    void on_lib_rviz_button_clicked();
+
+private slots:
+    void on_romap_button_clicked();
+
+    void on_mapping_button_clicked();
+
+    void on_button_connect_clicked();
 
 private:
 	Ui::MainWindowDesign ui;
+    //声明QNode对象
 	QNode qnode;
 };
 

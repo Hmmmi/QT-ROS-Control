@@ -24,6 +24,7 @@
 #include <string>
 #include <QThread>
 #include <QStringListModel>
+#include <std_msgs/String.h>
 
 
 /*****************************************************************************
@@ -43,7 +44,11 @@ public:
 	virtual ~QNode();
 	bool init();
 	bool init(const std::string &master_url, const std::string &host_url);
-	void run();
+  //void run();
+  void up();
+  void down();
+  void left();
+  void right();
 
 	/*********************
 	** Logging
@@ -59,15 +64,25 @@ public:
 	QStringListModel* loggingModel() { return &logging_model; }
 	void log( const LogLevel &level, const std::string &msg);
 
+    QStringListModel* loggingModel_sub() { return &logging_model_sub; }
+    void log_sub( const LogLevel &level, const std::string &msg );
+    void Callback( const std_msgs::StringConstPtr &submsg );
+    void sent_cmd();
+
 Q_SIGNALS:
 	void loggingUpdated();
     void rosShutdown();
+
+    void loggingUpdated_sub();
 
 private:
 	int init_argc;
 	char** init_argv;
 	ros::Publisher chatter_publisher;
     QStringListModel logging_model;
+
+    QStringListModel logging_model_sub;
+    //ros::Subscriber chatter_subscriber;
 };
 
 }  // namespace qtros

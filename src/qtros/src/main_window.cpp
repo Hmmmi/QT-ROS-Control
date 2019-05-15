@@ -13,7 +13,9 @@
 #include <QMessageBox>
 #include <iostream>
 #include "../include/qtros/main_window.hpp"
-
+#include "../include/qtros/myviz.h"
+#include "../include/qtros/mapp.h"
+#include "../include/qtros/romap.h"
 /*****************************************************************************
 ** Namespaces
 *****************************************************************************/
@@ -30,8 +32,9 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
 	: QMainWindow(parent)
 	, qnode(argc,argv)
 {
+
 	ui.setupUi(this); // Calling this incidentally connects all ui's triggers to on_...() callbacks in this class.
-    QObject::connect(ui.actionAbout_Qt, SIGNAL(triggered(bool)), qApp, SLOT(aboutQt())); // qApp is a global variable for the application
+  QObject::connect(ui.actionAbout_Qt, SIGNAL(triggered(bool)), qApp, SLOT(aboutQt())); // qApp is a global variable for the application
 
     ReadSettings();
 	setWindowIcon(QIcon(":/images/icon.png"));
@@ -43,6 +46,12 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
 	**********************/
 	ui.view_logging->setModel(qnode.loggingModel());
     QObject::connect(&qnode, SIGNAL(loggingUpdated()), this, SLOT(updateLoggingView()));
+
+    //使用connect()函数将信号与槽进行连接
+    ui.view_logging_sub->setModel(qnode.loggingModel_sub());
+    QObject::connect(&qnode, SIGNAL(loggingUpdated_sub()), this, SLOT(updateLoggingView_sub()));
+    QObject::connect(ui.sent_cmd, SIGNAL(clicked()), this, SLOT(pub_cmd()));
+    QObject::connect(ui.dialog_button, SIGNAL(clicked()), this, SLOT(on_dialog_button_clicked()));
 
     /*********************
     ** Auto Start
@@ -62,7 +71,7 @@ void MainWindow::showNoMasterMessage() {
 	QMessageBox msgBox;
 	msgBox.setText("Couldn't find the ros master.");
 	msgBox.exec();
-    close();
+    //close();
 }
 
 /*
@@ -73,14 +82,14 @@ void MainWindow::showNoMasterMessage() {
 void MainWindow::on_button_connect_clicked(bool check ) {
 	if ( ui.checkbox_use_environment->isChecked() ) {
 		if ( !qnode.init() ) {
-			showNoMasterMessage();
+      //showNoMasterMessage();
 		} else {
 			ui.button_connect->setEnabled(false);
 		}
 	} else {
 		if ( ! qnode.init(ui.line_edit_master->text().toStdString(),
 				   ui.line_edit_host->text().toStdString()) ) {
-			showNoMasterMessage();
+      showNoMasterMessage();
 		} else {
 			ui.button_connect->setEnabled(false);
 			ui.line_edit_master->setReadOnly(true);
@@ -114,6 +123,11 @@ void MainWindow::on_checkbox_use_environment_stateChanged(int state) {
  */
 void MainWindow::updateLoggingView() {
         ui.view_logging->scrollToBottom();
+}
+
+//定义updateLoggingView_sub()函数，将QListView组件自动滑到最底部
+void MainWindow::updateLoggingView_sub() {
+    ui.view_logging_sub->scrollToBottom();
 }
 
 /*****************************************************************************
@@ -167,5 +181,64 @@ void MainWindow::closeEvent(QCloseEvent *event)
 	QMainWindow::closeEvent(event);
 }
 
+//MainWindow与QNode的连接，调用qnode的sent_cmd()函数
+void MainWindow::pub_cmd()
+{
+    qnode.sent_cmd();
+}
+
+//弹出框显示
+void MainWindow::on_dialog_button_clicked()
+{
+  manualdialog* dlg = new manualdialog();
+  dlg->exec();
+}
+
+void MainWindow::on_up_clicked()
+{
+  qnode.up();
+}
+
+void MainWindow::on_down_clicked()
+{
+  qnode.down();
+}
+
+void MainWindow::on_left_clicked()
+{
+  qnode.left();
+}
+
+void MainWindow::on_right_clicked()
+{
+  qnode.right();
+}
+
+void MainWindow::on_lib_rviz_button_clicked()
+{
+  MyViz* myviz = new MyViz();
+  myviz->show();
+  myviz->resize(600, 400);
+  myviz->setWindowTitle("Mapping Show");
+}
+
+void MainWindow::on_romap_button_clicked()
+{
+  RoMap* romap = new RoMap();
+  romap->show();
+}
+
+void MainWindow::on_mapping_button_clicked()
+{
+  MAPP* mapp = new MAPP();
+  mapp->show();
+}
+
 }  // namespace qtros
+
+
+
+
+
+
 

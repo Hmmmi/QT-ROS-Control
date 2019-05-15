@@ -1,0 +1,8 @@
+prefix=/home/riki/JingMi_ROS_ws/catkin_ws/devel
+
+Name: image_node_b
+Description: Description of image_node_b
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/riki/JingMi_ROS_ws/catkin_ws/devel/lib 
+Requires: 
