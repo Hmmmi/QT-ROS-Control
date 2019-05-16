@@ -69,8 +69,11 @@ MainWindow::~MainWindow() {}
 
 void MainWindow::showNoMasterMessage() {
 	QMessageBox msgBox;
-	msgBox.setText("Couldn't find the ros master.");
-	msgBox.exec();
+  msgBox.critical(NULL, "A Ou :(", "<h2>Couldn't find the ros master.</h2>");
+  //msgBox.information(NULL, "A Ou :(", "Couldn't find the ros master.");
+  //QMessageBox::information(NULL, "A Ou :(", "Couldn't find the ros master.");
+  //msgBox.setText("Couldn't find the ros master.");
+  //msgBox.exec();
     //close();
 }
 
@@ -82,7 +85,7 @@ void MainWindow::showNoMasterMessage() {
 void MainWindow::on_button_connect_clicked(bool check ) {
 	if ( ui.checkbox_use_environment->isChecked() ) {
 		if ( !qnode.init() ) {
-      //showNoMasterMessage();
+      showNoMasterMessage();
 		} else {
 			ui.button_connect->setEnabled(false);
 		}
@@ -135,7 +138,12 @@ void MainWindow::updateLoggingView_sub() {
 *****************************************************************************/
 
 void MainWindow::on_actionAbout_triggered() {
-    QMessageBox::about(this, tr("About ..."),tr("<h2>PACKAGE_NAME Test Program 0.10</h2><p>Copyright Yujin Robot</p><p>This package needs an about description.</p>"));
+    QMessageBox::about(this, tr("About ..."),tr("<h2>QT-ROS Test Program 1.1</h2> "
+                                                "<p>@Copyright JingMi</p> "
+                                                "<p>Getting stared with ROS. "
+                                                "I use QT for GUI development. "
+                                                "I implement the Raspberry Pi robot controlled "
+                                                "by buttons and display the map by librviz library.</p>"));
 }
 
 /*****************************************************************************
@@ -190,8 +198,10 @@ void MainWindow::pub_cmd()
 //弹出框显示
 void MainWindow::on_dialog_button_clicked()
 {
-  manualdialog* dlg = new manualdialog();
-  dlg->exec();
+  system("gnome-terminal -x bash -c 'source ~/JingMi_ROS_ws/catkin_ws/devel/setup.bash; rosrun rviz rviz'&");
+  system("gnome-terminal -x bash -c 'source ~/JingMi_ROS_ws/catkin_ws/devel/setup.bash; rqt'&");
+  system("gnome-terminal -x bash -c 'source ~/JingMi_ROS_ws/catkin_ws/devel/setup.bash; export TURTLEBOT3_MODEL=burger; roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping'&");
+  exit(0);
 }
 
 void MainWindow::on_up_clicked()

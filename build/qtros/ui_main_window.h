@@ -366,7 +366,7 @@ public:
         button_connect->setText(QApplication::translate("MainWindowDesign", "Connect", 0));
         line_edit_host->setText(QApplication::translate("MainWindowDesign", "192.168.1.67", 0));
         mapping_button->setText(QApplication::translate("MainWindowDesign", "mapping", 0));
-        dialog_button->setText(QApplication::translate("MainWindowDesign", "Manual Dialog Control", 0));
+        dialog_button->setText(QApplication::translate("MainWindowDesign", "LAUNCH", 0));
         sent_cmd->setText(QApplication::translate("MainWindowDesign", "\345\217\221\345\270\203\346\266\210\346\201\257", 0));
         up->setText(QApplication::translate("MainWindowDesign", "UP", 0));
         down->setText(QApplication::translate("MainWindowDesign", "DOWN", 0));

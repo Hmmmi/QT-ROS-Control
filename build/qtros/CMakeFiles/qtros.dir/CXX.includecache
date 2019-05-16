@@ -135,6 +135,12 @@ iostream
 -
 ../include/qtros/main_window.hpp
 /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/main_window.hpp
+../include/qtros/myviz.h
+/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/myviz.h
+../include/qtros/mapp.h
+/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/mapp.h
+../include/qtros/romap.h
+/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/romap.h
 
 /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/manual_dialog.cpp
 ../include/qtros/manual_dialog.h

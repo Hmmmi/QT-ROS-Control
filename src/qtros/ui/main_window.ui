@@ -282,7 +282,7 @@
       <item>
        <widget class="QPushButton" name="dialog_button">
         <property name="text">
-         <string>Manual Dialog Control</string>
+         <string>LAUNCH</string>
         </property>
        </widget>
       </item>
