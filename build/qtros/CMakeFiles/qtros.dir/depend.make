@@ -3464,6 +3464,8 @@ qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Qt
 
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/qnode.hpp
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/qnode.cpp
+qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Twist.h
+qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3.h
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /opt/ros/kinetic/include/ros/assert.h

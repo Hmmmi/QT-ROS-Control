@@ -193,6 +193,8 @@ std_msgs/String.h
 -
 sstream
 -
+geometry_msgs/Twist.h
+-
 ../include/qtros/qnode.hpp
 /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/qnode.hpp
 

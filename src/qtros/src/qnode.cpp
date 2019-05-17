@@ -98,42 +98,42 @@ bool QNode::init(const std::string &master_url, const std::string &host_url) {
 //}
 
 void QNode::up() {
-  ros::Rate loop_rate(1);
+  //ros::Rate loop_rate(1);
 
   if ( ros::ok() ) {
     geometry_msgs::Twist msg;
-    msg.linear.x = 0.5;
+    msg.linear.x = 2;
     msg.angular.z = 0.0;
 
     chatter_publisher.publish(msg);
 
     ros::spinOnce();
-    loop_rate.sleep();
+    //loop_rate.sleep();
   }
   log(Info,std::string("up"));
 }
 
 void QNode::down()
 {
-  ros::Rate loop_rate(1);
+  //ros::Rate loop_rate(1);
 
   if(ros::ok())
   {
     geometry_msgs::Twist msg;
-    msg.linear.x = -0.5;
+    msg.linear.x = -2;
     msg.angular.z = 0.0;
 
     chatter_publisher.publish(msg);
 
     ros::spinOnce();
-    loop_rate.sleep();
+   // loop_rate.sleep();
   }
   log(Info,std::string("down"));
 }
 
 void QNode::left()
 {
-  ros::Rate loop_rate(1);
+  //ros::Rate loop_rate(1);
 
   if(ros::ok())
   {
@@ -145,14 +145,14 @@ void QNode::left()
     chatter_publisher.publish(msg);
 
     ros::spinOnce();
-    loop_rate.sleep();
+   // loop_rate.sleep();
   }
   log(Info,std::string("left"));
 }
 
 void QNode::right()
 {
-  ros::Rate loop_rate(1);
+  //ros::Rate loop_rate(1);
 
   if(ros::ok())
   {
@@ -163,7 +163,7 @@ void QNode::right()
     chatter_publisher.publish(msg);
 
     ros::spinOnce();
-    loop_rate.sleep();
+   // loop_rate.sleep();
   }
   log(Info,std::string("right"));
 }
