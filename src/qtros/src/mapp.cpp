@@ -146,6 +146,7 @@ void MAPP::on_map_button_clicked()
   rviz::Display *map_ = manager_->createDisplay("rviz/Map","adjustable map",true);
   ROS_ASSERT(map_ != NULL);
   map_->subProp("Topic")->setValue("/map");
+  map_->subProp("Size (m)")->setValue("0.05");
 
   rviz::Display *robot_ = manager_->createDisplay("rviz/RobotModel", "adjustable robot", true);
   ROS_ASSERT(robot_ != NULL);
@@ -153,7 +154,7 @@ void MAPP::on_map_button_clicked()
 
   rviz::Display *laser_ = manager_->createDisplay("rviz/LaserScan", "adjustable scan", true);
   laser_->subProp("Topic")->setValue("/scan");
-  laser_->subProp("Size (m)")->setValue("0.1");
+  laser_->subProp("Size (m)")->setValue("0.05");
 }
 
 void MAPP::on_quit_button_clicked()
