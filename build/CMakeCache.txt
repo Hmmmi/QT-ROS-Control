@@ -41,7 +41,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -973,6 +973,15 @@ laser_geometry_DIR:PATH=/opt/ros/kinetic/share/laser_geometry/cmake
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/librosconsole_bridge.so
+
+//The directory containing a CMake configuration file for libssh.
+libssh_DIR:PATH=libssh_DIR-NOTFOUND
+
+//Dependencies for target
+libssh_LIB_DEPENDS:STATIC=
+
+//The directory containing a CMake configuration file for lssh.
+lssh_DIR:PATH=lssh_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/kinetic/share/map_msgs/cmake

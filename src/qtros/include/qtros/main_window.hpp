@@ -42,6 +42,7 @@ public:
 
 	void closeEvent(QCloseEvent *event); // Overloaded function
 	void showNoMasterMessage();
+  int ssh_login();
 
 public Q_SLOTS:
 	/******************************************

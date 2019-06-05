@@ -302,7 +302,6 @@
             <Add option="-DQT_WIDGETS_LIB" />
             <Add option="-DQT_GUI_LIB" />
             <Add option="-DQT_CORE_LIB" />
-            <Add option="-DQT_NO_DEBUG" />
             <Add directory="/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros" />
             <Add directory="/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros" />
             <Add directory="/opt/ros/kinetic/include" />
@@ -336,7 +335,6 @@
             <Add option="-DQT_WIDGETS_LIB" />
             <Add option="-DQT_GUI_LIB" />
             <Add option="-DQT_CORE_LIB" />
-            <Add option="-DQT_NO_DEBUG" />
             <Add directory="/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros" />
             <Add directory="/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros" />
             <Add directory="/opt/ros/kinetic/include" />

@@ -86,25 +86,33 @@ qtros/include/qtros/moc_qnode.cpp: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/qtros/moc_qnode.cpp"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_qnode.cpp_parameters
 
+qtros/include/moc_libssh.cpp: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/libssh.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/moc_libssh.cpp"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/moc_libssh.cpp_parameters
+
 qtros/include/qtros/moc_romap.cpp: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/romap.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/qtros/moc_romap.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/qtros/moc_romap.cpp"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_romap.cpp_parameters
 
 qtros/include/qtros/moc_myviz.cpp: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/myviz.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/qtros/moc_myviz.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/qtros/moc_myviz.cpp"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_myviz.cpp_parameters
 
 qtros/include/qtros/moc_manual_dialog.cpp: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/manual_dialog.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/qtros/moc_manual_dialog.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/qtros/moc_manual_dialog.cpp"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_manual_dialog.cpp_parameters
 
 qtros/include/qtros/moc_mapp.cpp: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/mapp.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/qtros/moc_mapp.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/qtros/moc_mapp.cpp"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_mapp.cpp_parameters
+
+qtros/include/qtros/moc_server.cpp: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/include/qtros/server.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/qtros/moc_server.cpp"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros && /usr/lib/x86_64-linux-gnu/qt5/bin/moc @/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_server.cpp_parameters
 
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/qnode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/src/qnode.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/qnode.cpp
 
 qtros/CMakeFiles/qtros.dir/src/qnode.cpp.i: cmake_force
@@ -128,7 +136,7 @@ qtros/CMakeFiles/qtros.dir/src/qnode.cpp.o.provides.build: qtros/CMakeFiles/qtro
 
 qtros/CMakeFiles/qtros.dir/src/romap.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/src/romap.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/romap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object qtros/CMakeFiles/qtros.dir/src/romap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object qtros/CMakeFiles/qtros.dir/src/romap.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/src/romap.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/romap.cpp
 
 qtros/CMakeFiles/qtros.dir/src/romap.cpp.i: cmake_force
@@ -152,7 +160,7 @@ qtros/CMakeFiles/qtros.dir/src/romap.cpp.o.provides.build: qtros/CMakeFiles/qtro
 
 qtros/CMakeFiles/qtros.dir/src/main_window.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/src/main_window.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/main_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object qtros/CMakeFiles/qtros.dir/src/main_window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object qtros/CMakeFiles/qtros.dir/src/main_window.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/src/main_window.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/main_window.cpp
 
 qtros/CMakeFiles/qtros.dir/src/main_window.cpp.i: cmake_force
@@ -176,7 +184,7 @@ qtros/CMakeFiles/qtros.dir/src/main_window.cpp.o.provides.build: qtros/CMakeFile
 
 qtros/CMakeFiles/qtros.dir/src/mapp.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/src/mapp.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/mapp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object qtros/CMakeFiles/qtros.dir/src/mapp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object qtros/CMakeFiles/qtros.dir/src/mapp.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/src/mapp.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/mapp.cpp
 
 qtros/CMakeFiles/qtros.dir/src/mapp.cpp.i: cmake_force
@@ -200,7 +208,7 @@ qtros/CMakeFiles/qtros.dir/src/mapp.cpp.o.provides.build: qtros/CMakeFiles/qtros
 
 qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/manual_dialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/src/manual_dialog.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/manual_dialog.cpp
 
 qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.i: cmake_force
@@ -224,7 +232,7 @@ qtros/CMakeFiles/qtros.dir/src/manual_dialog.cpp.o.provides.build: qtros/CMakeFi
 
 qtros/CMakeFiles/qtros.dir/src/main.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/src/main.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object qtros/CMakeFiles/qtros.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object qtros/CMakeFiles/qtros.dir/src/main.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/src/main.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/main.cpp
 
 qtros/CMakeFiles/qtros.dir/src/main.cpp.i: cmake_force
@@ -248,7 +256,7 @@ qtros/CMakeFiles/qtros.dir/src/main.cpp.o.provides.build: qtros/CMakeFiles/qtros
 
 qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o: /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/myviz.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/src/myviz.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/myviz.cpp
 
 qtros/CMakeFiles/qtros.dir/src/myviz.cpp.i: cmake_force
@@ -272,7 +280,7 @@ qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o.provides.build: qtros/CMakeFiles/qtro
 
 qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o: qtros/qrc_images.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/qrc_images.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/qrc_images.cpp
 
 qtros/CMakeFiles/qtros.dir/qrc_images.cpp.i: cmake_force
@@ -296,7 +304,7 @@ qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o.provides.build: qtros/CMakeFiles/qtr
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o: qtros/include/qtros/moc_main_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_main_window.cpp
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.i: cmake_force
@@ -320,7 +328,7 @@ qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o.provides.build: q
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o: qtros/include/qtros/moc_qnode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_qnode.cpp
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.i: cmake_force
@@ -342,9 +350,33 @@ qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o.provides: qtros/CMakeFi
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o.provides.build: qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o
 
 
+qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
+qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o: qtros/include/moc_libssh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/moc_libssh.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/moc_libssh.cpp
+
+qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qtros.dir/include/moc_libssh.cpp.i"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/moc_libssh.cpp > CMakeFiles/qtros.dir/include/moc_libssh.cpp.i
+
+qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qtros.dir/include/moc_libssh.cpp.s"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/moc_libssh.cpp -o CMakeFiles/qtros.dir/include/moc_libssh.cpp.s
+
+qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.requires:
+
+.PHONY : qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.requires
+
+qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.provides: qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.requires
+	$(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.provides.build
+.PHONY : qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.provides
+
+qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.provides.build: qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o
+
+
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o: qtros/include/qtros/moc_romap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_romap.cpp
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.i: cmake_force
@@ -368,7 +400,7 @@ qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o.provides.build: qtros/C
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o: qtros/include/qtros/moc_myviz.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_myviz.cpp
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.i: cmake_force
@@ -392,7 +424,7 @@ qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o.provides.build: qtros/C
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o: qtros/include/qtros/moc_manual_dialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_manual_dialog.cpp
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.i: cmake_force
@@ -416,7 +448,7 @@ qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o.provides.build:
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o: qtros/include/qtros/moc_mapp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_mapp.cpp
 
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.i: cmake_force
@@ -438,6 +470,30 @@ qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o.provides: qtros/CMakeFil
 qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o.provides.build: qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o
 
 
+qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o: qtros/CMakeFiles/qtros.dir/flags.make
+qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o: qtros/include/qtros/moc_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o -c /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_server.cpp
+
+qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.i"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_server.cpp > CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.i
+
+qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.s"
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_server.cpp -o CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.s
+
+qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.requires:
+
+.PHONY : qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.requires
+
+qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.provides: qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.requires
+	$(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.provides.build
+.PHONY : qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.provides
+
+qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.provides.build: qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o
+
+
 # Object files for target qtros
 qtros_OBJECTS = \
 "CMakeFiles/qtros.dir/src/qnode.cpp.o" \
@@ -450,10 +506,12 @@ qtros_OBJECTS = \
 "CMakeFiles/qtros.dir/qrc_images.cpp.o" \
 "CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o" \
 "CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o" \
+"CMakeFiles/qtros.dir/include/moc_libssh.cpp.o" \
 "CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o" \
 "CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o" \
 "CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o" \
-"CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o"
+"CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o" \
+"CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o"
 
 # External object files for target qtros
 qtros_EXTERNAL_OBJECTS =
@@ -468,10 +526,12 @@ qtros_EXTERNAL_OBJECTS =
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o
+/home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o
+/home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/build.make
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.5.1
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: /opt/ros/kinetic/lib/librviz.so
@@ -525,7 +585,7 @@ qtros_EXTERNAL_OBJECTS =
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.5.1
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.5.1
 /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros: qtros/CMakeFiles/qtros.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/riki/JingMi_ROS_ws/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable /home/riki/JingMi_ROS_ws/catkin_ws/devel/lib/qtros/qtros"
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qtros.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -543,10 +603,12 @@ qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/src/myviz.cpp.o.
 qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o.requires
 qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o.requires
 qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o.requires
+qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o.requires
 qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o.requires
 qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o.requires
 qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o.requires
 qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o.requires
+qtros/CMakeFiles/qtros.dir/requires: qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o.requires
 
 .PHONY : qtros/CMakeFiles/qtros.dir/requires
 
@@ -561,10 +623,12 @@ qtros/CMakeFiles/qtros.dir/depend: qtros/ui_romap.h
 qtros/CMakeFiles/qtros.dir/depend: qtros/ui_mapp.h
 qtros/CMakeFiles/qtros.dir/depend: qtros/include/qtros/moc_main_window.cpp
 qtros/CMakeFiles/qtros.dir/depend: qtros/include/qtros/moc_qnode.cpp
+qtros/CMakeFiles/qtros.dir/depend: qtros/include/moc_libssh.cpp
 qtros/CMakeFiles/qtros.dir/depend: qtros/include/qtros/moc_romap.cpp
 qtros/CMakeFiles/qtros.dir/depend: qtros/include/qtros/moc_myviz.cpp
 qtros/CMakeFiles/qtros.dir/depend: qtros/include/qtros/moc_manual_dialog.cpp
 qtros/CMakeFiles/qtros.dir/depend: qtros/include/qtros/moc_mapp.cpp
+qtros/CMakeFiles/qtros.dir/depend: qtros/include/qtros/moc_server.cpp
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/riki/JingMi_ROS_ws/catkin_ws/src /home/riki/JingMi_ROS_ws/catkin_ws/src/qtros /home/riki/JingMi_ROS_ws/catkin_ws/build /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros /home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : qtros/CMakeFiles/qtros.dir/depend
 

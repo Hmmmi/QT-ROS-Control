@@ -1,5 +1,10 @@
 # Hashes of file build rules.
 e136613c656bd9e41849a93df14fca5b CMakeFiles/clean_test_results
+e46f534ecaac51308b4f906c9dd82167 qtros/include/moc_libssh.cpp
+2e66257fea7ae8a71a3a2552d8a9cff7 qtros/include/qtros/moc_callbacks.cpp
+3b606aa4b3baed311c23e3bcc2a1b3a5 qtros/include/qtros/moc_channel.cpp
+047812c758180ec0342476807ec48708 qtros/include/qtros/moc_legacy.cpp
+851583cfcf3743a4ba471660e2351aba qtros/include/qtros/moc_libssh.cpp
 2a3cbbe4b3642ae081f735d0f5f79978 qtros/include/qtros/moc_main_window.cpp
 a4b88ebc80bb72893f5bb0624f41ecd4 qtros/include/qtros/moc_main_window.cxx
 5a02f95c4d7dfddac9c6a07a2d016c56 qtros/include/qtros/moc_manual_dialog.cpp
@@ -7,7 +12,12 @@ cc2f6f8e5748e0d7ff3584cf39b51204 qtros/include/qtros/moc_mapp.cpp
 d44d53cc31d4ea3a4145575fb8228379 qtros/include/qtros/moc_myviz.cpp
 da8f925b0483fa6581438dc63b60a184 qtros/include/qtros/moc_qnode.cpp
 e190f028228930bed4b8e77909edab2d qtros/include/qtros/moc_qnode.cxx
+8bf2c426d90ff9f81e5252f2411b0739 qtros/include/qtros/moc_qsshmanager.cpp
+bfc4ea932ee727c52510918025c46977 qtros/include/qtros/moc_qsshsocket.cpp
 e66e0f18f575dd78d9b69ae6c753c267 qtros/include/qtros/moc_romap.cpp
+36fee5d0682049af894b601294d9c63f qtros/include/qtros/moc_server.cpp
+125ec70914ed886a0a8c25564e11ad98 qtros/include/qtros/moc_sftp.cpp
+3333387f10dbc20450f801044f00db2a qtros/include/qtros/moc_ssh2.cpp
 a82200be7ab1781bb4c2a9b82bd863b1 qtros/qrc_images.cpp
 a1c45ed7494671885394e168e83d589b qtros/qrc_images.cxx
 cd7a690bd4aedfab15b85895adb54871 qtros/ui_main_window.h

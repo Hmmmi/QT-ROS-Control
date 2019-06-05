@@ -1080,6 +1080,33 @@ visualization_msgs_generate_messages_cpp/fast:
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make qtros/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
+include/moc_libssh.o: include/moc_libssh.cpp.o
+
+.PHONY : include/moc_libssh.o
+
+# target to build an object file
+include/moc_libssh.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o
+.PHONY : include/moc_libssh.cpp.o
+
+include/moc_libssh.i: include/moc_libssh.cpp.i
+
+.PHONY : include/moc_libssh.i
+
+# target to preprocess a source file
+include/moc_libssh.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.i
+.PHONY : include/moc_libssh.cpp.i
+
+include/moc_libssh.s: include/moc_libssh.cpp.s
+
+.PHONY : include/moc_libssh.s
+
+# target to generate assembly for a file
+include/moc_libssh.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.s
+.PHONY : include/moc_libssh.cpp.s
+
 include/qtros/moc_main_window.o: include/qtros/moc_main_window.cpp.o
 
 .PHONY : include/qtros/moc_main_window.o
@@ -1241,6 +1268,33 @@ include/qtros/moc_romap.s: include/qtros/moc_romap.cpp.s
 include/qtros/moc_romap.cpp.s:
 	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.s
 .PHONY : include/qtros/moc_romap.cpp.s
+
+include/qtros/moc_server.o: include/qtros/moc_server.cpp.o
+
+.PHONY : include/qtros/moc_server.o
+
+# target to build an object file
+include/qtros/moc_server.cpp.o:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o
+.PHONY : include/qtros/moc_server.cpp.o
+
+include/qtros/moc_server.i: include/qtros/moc_server.cpp.i
+
+.PHONY : include/qtros/moc_server.i
+
+# target to preprocess a source file
+include/qtros/moc_server.cpp.i:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.i
+.PHONY : include/qtros/moc_server.cpp.i
+
+include/qtros/moc_server.s: include/qtros/moc_server.cpp.s
+
+.PHONY : include/qtros/moc_server.s
+
+# target to generate assembly for a file
+include/qtros/moc_server.cpp.s:
+	cd /home/riki/JingMi_ROS_ws/catkin_ws/build && $(MAKE) -f qtros/CMakeFiles/qtros.dir/build.make qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.s
+.PHONY : include/qtros/moc_server.cpp.s
 
 qrc_images.o: qrc_images.cpp.o
 
@@ -1532,6 +1586,9 @@ help:
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... include/moc_libssh.o"
+	@echo "... include/moc_libssh.i"
+	@echo "... include/moc_libssh.s"
 	@echo "... include/qtros/moc_main_window.o"
 	@echo "... include/qtros/moc_main_window.i"
 	@echo "... include/qtros/moc_main_window.s"
@@ -1550,6 +1607,9 @@ help:
 	@echo "... include/qtros/moc_romap.o"
 	@echo "... include/qtros/moc_romap.i"
 	@echo "... include/qtros/moc_romap.s"
+	@echo "... include/qtros/moc_server.o"
+	@echo "... include/qtros/moc_server.i"
+	@echo "... include/qtros/moc_server.s"
 	@echo "... qrc_images.o"
 	@echo "... qrc_images.i"
 	@echo "... qrc_images.s"

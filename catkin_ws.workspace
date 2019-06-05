@@ -4,8 +4,5 @@
     <DefaultBuildSystem value="0"/>
     <WatchDirectories>
         <Directory>src</Directory>
-        <Directory>build</Directory>
-        <Directory>devel</Directory>
-        <Directory>pic</Directory>
     </WatchDirectories>
 </Workspace>

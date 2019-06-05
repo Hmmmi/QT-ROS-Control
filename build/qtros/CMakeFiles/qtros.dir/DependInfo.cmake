@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/moc_libssh.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/moc_libssh.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_main_window.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/qtros/moc_main_window.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_manual_dialog.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/qtros/moc_manual_dialog.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_mapp.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/qtros/moc_mapp.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_myviz.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/qtros/moc_myviz.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_qnode.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/qtros/moc_qnode.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_romap.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/qtros/moc_romap.cpp.o"
+  "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/include/qtros/moc_server.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/include/qtros/moc_server.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/qrc_images.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/qrc_images.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/main.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/src/main.cpp.o"
   "/home/riki/JingMi_ROS_ws/catkin_ws/src/qtros/src/main_window.cpp" "/home/riki/JingMi_ROS_ws/catkin_ws/build/qtros/CMakeFiles/qtros.dir/src/main_window.cpp.o"
@@ -25,7 +27,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_CORE_LIB"
   "QT_GUI_LIB"
-  "QT_NO_DEBUG"
   "QT_WIDGETS_LIB"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"

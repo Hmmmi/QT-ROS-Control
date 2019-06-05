@@ -49,6 +49,14 @@ private slots:
 
   void on_quit_button_clicked();
 
+  void on_forward_button_clicked();
+
+  void on_left_button_clicked();
+
+  void on_right_button_clicked();
+
+  void on_back_button_clicked();
+
 private:
   Ui::MAPP *ui;
   //声明可视化管理类VisualizationManager，并初始化，就可以不断更新
