@@ -1,6 +1,9 @@
 
-# My ROS Example in QT creator.  
-Getting stared with ROS. I use QT for GUI development. I implement the Raspberry Pi robot controlled by buttons and display the map by librviz library. 
+# My ROS Example in QT creator. 
+Getting started with ROS (Robot Operating System), and using the QT for GUI development. The robot based on the Raspberry Pi.
+## Major Function
+ - ROS communication: QT Application communication with ROS robot, and robot can controled by buttons.
+ - ROS SLAM: using gammping to create a map and show in QT Application.
 ## Environment
  - ROS version: Kinetic
  - Ubuntu version: 16.04
