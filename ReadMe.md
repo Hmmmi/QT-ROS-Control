@@ -1,5 +1,5 @@
 
-# My ROS Example in QT creator. 
+# My ROS Demo in QT creator. 
 Getting started with ROS (Robot Operating System), and using the QT for GUI development. The robot based on the Raspberry Pi.
 ## Major Function
  - ROS communication: QT Application communication with ROS robot, and robot can controled by buttons.
@@ -12,8 +12,8 @@ Getting started with ROS (Robot Operating System), and using the QT for GUI deve
  - ...
 
 ## Running results
-![Raspberry Pi Robot](https://github.com/MiJingGitID12138/QT-ROS-Example/blob/master/pic/ras.png)
-![Mapping](https://github.com/MiJingGitID12138/QT-ROS-Example/blob/master/pic/mapping.png)
+![Raspberry Pi Robot](https://github.com/MiJingGitID12138/QT-ROS-Control/blob/master/pic/ras.png)
+![Mapping](https://github.com/MiJingGitID12138/QT-ROS-Control/blob/master/pic/mapping.png)
 ## Reference
  - [1] ROS机器人开发实践，胡春旭
  - [2] ROS与QT语言入门教程-创客制造 https://www.ncnynl.com/category/ros-qt/
